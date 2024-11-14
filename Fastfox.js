@@ -334,10 +334,10 @@ user_pref("image.mem.decode_bytes_at_a_time", 32768); // default=16384; alt=6553
 // [1] https://kb.mozillazine.org/Network.http.max-connections
 // [2] https://kb.mozillazine.org/Network.http.max-persistent-connections-per-server
 // [3] https://www.reddit.com/r/firefox/comments/11m2yuh/how_do_i_make_firefox_use_more_of_my_900_megabit/jbfmru6/
-user_pref("network.http.max-connections", 1800); // default=900
-user_pref("network.http.max-persistent-connections-per-server", 10); // default=6; download connections; anything above 10 is excessive
+user_pref("network.http.max-connections", 2200); // default=900
+user_pref("network.http.max-persistent-connections-per-server", 100); // default=6; download connections; anything above 10 is excessive
     user_pref("network.http.max-urgent-start-excessive-connections-per-host", 5); // default=3
-    //user_pref("network.http.max-persistent-connections-per-proxy", 48); // default=32
+    user_pref("network.http.max-persistent-connections-per-proxy", 48); // default=32
 //user_pref("network.websocket.max-connections", 200); // DEFAULT
 
 // PREF: pacing requests [FF23+]
